@@ -36,7 +36,7 @@ jobs:
         run: |
           arduino-cli core install esp32:esp32@2.0.14
 
-            - name: Install required Arduino libraries
+      - name: Install required Arduino libraries
         run: |
           arduino-cli lib install "LinkedList"
           arduino-cli lib install "ArduinoJson"
