@@ -34,6 +34,9 @@ jobs:
       - name: Install ESP32 core 2.0.14
         run: |
           arduino-cli core install esp32:esp32@2.0.14
+      - name: Install LinkedList library
+        run: |
+          arduino-cli lib install "LinkedList"
 
       - name: Show installed cores
         run: |
