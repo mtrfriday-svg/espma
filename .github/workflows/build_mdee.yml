@@ -44,7 +44,7 @@ jobs:
           arduino-cli compile \
             --fqbn esp32:esp32:esp32s3:FlashSize=4M,PSRAM=enabled \
             --output-dir build \
-            .
+            ./esp32_marauder
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
